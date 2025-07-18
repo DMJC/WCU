@@ -1,0 +1,122 @@
+{
+  "universe": "Wing Commander",
+  "sectors": [
+    {
+      "name": "Gemini",
+      "quadrants": [
+        {
+          "name": "Humbolt",
+          "systems": [
+            {
+              "name": "Troy",
+              "nav_points": [
+                {
+                  "name": "Nav 1",
+                  "x": 30000,
+                  "y": 40000,
+                  "z": 20000,
+                  "description": "Jump Point - Pyrenees",
+                  "type": "JumpPoint"
+                },
+                {
+                  "name": "Nav 2",
+                  "x": 60000,
+                  "y": 0,
+                  "z": -40000,
+                  "description": "Achilles Mining Base",
+                  "type": "Base"
+                },
+                {
+                  "name": "Nav 3",
+                  "x": 30000,
+                  "y": -40000,
+                  "z": 40000,
+                  "description": "Jump Point - Pender's Star",
+                  "type": "JumpPoint"
+                  "links_to": {
+                    "system": "Pender's Star",
+                    "jump_point": "Nav 3"
+                  }
+                },
+                {
+                  "name": "Nav 4",
+                  "x": 50000,
+                  "y": -60000,
+                  "z": -40000,
+                  "description": "Hector Mining Base",
+                  "type": "Base"
+                },
+                {
+                  "name": "Nav 5",
+                  "x": 45000,
+                  "y": -20000,
+                  "z": -30000,
+                  "description": "Jump Point - Regallis",
+                  "type": "JumpPoint"
+                },
+                {
+                  "name": "Nav 6",
+                  "x": 50000,
+                  "y": 30000,
+                  "z": -20000,
+                  "description": "Helen Agricultural Planet",
+                  "type": "Base"
+                },
+                {
+                  "name": "Nav 7",
+                  "x": 0,
+                  "y": 45000,
+                  "z": 0,
+                  "description": "Jump Point - War",
+                  "type": "JumpPoint"
+                },
+                {
+                  "name": "Nav 8",
+                  "x": 15000,
+                  "y": 10000,
+                  "z": -30000,
+                  "description": "",
+                  "type": "NavPoint"
+                }
+              ]
+            },
+            {
+             "name": "Pender's Star",
+              "nav_points": [
+                {
+                  "name": "Nav 1",
+                  "x": -40000,
+                  "y": -50000,
+                  "z": -10000,
+                  "description": "Jump Point - Junction",
+                  "type": "JumpPoint"
+                },
+                {
+                  "name": "Nav 2",
+                  "x": -7500,
+                  "y": 12000,
+                  "z": 10000,
+                  "description": "!!Asteroid Field",
+                  "type": "Asteroids"
+                },
+                {
+                  "name": "Nav 3",
+                  "x": 30000,
+                  "y": -40000,
+                  "z": 0,
+                  "description": "Jump Point - Troy",
+                  "type": "JumpPoint"
+                  "links_to": {
+                    "system": "Troy",
+                    "jump_point": "Nav 3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

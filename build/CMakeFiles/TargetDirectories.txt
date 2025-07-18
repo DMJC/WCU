@@ -1,0 +1,4 @@
+/home/james/development/WCU/build/CMakeFiles/glad.dir
+/home/james/development/WCU/build/CMakeFiles/space_sim.dir
+/home/james/development/WCU/build/CMakeFiles/edit_cache.dir
+/home/james/development/WCU/build/CMakeFiles/rebuild_cache.dir

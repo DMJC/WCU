@@ -1,0 +1,95 @@
+Ship Classes: bombers, fighters, carrier, destroyer, cruiser, corvette
+Capital Ship, Star Base and Planet base properties:
+	bool planet_killer;
+	bool phase_transit_cannon;
+	bool can_have_torpedos; 
+	bool can_skipper_missile;
+	bool can_capship_missile;
+	bool can_launch_fighters;
+	bool can_launch_bombers;
+	bool can_launch_shuttles;
+	bool immune_to_non_torpedoes; //immune to gun/missile damage.
+	bool can_cloak;
+	bool can_jump;
+	bool has_cockpit;
+	bool has_interior;
+	bool dockable;
+	bool landable;
+	int landing_radius;
+	int faction;
+	bool friendly_to_player;
+	int jump_fuel;	bool friendly;
+	int turrets;
+	int engine_speed;
+	int turn_left_right_speed;
+	int pitch_up_down_speed;
+	int roll_speed;
+	int mass;
+	int cargo_capacity;
+	int engine_health; //0-100 (0 being destroyed)
+	int hull_health; //0-100 (0 destroys ship)
+	int front_armor;
+	int rear_armor;
+	int left_armor;
+	int right_armor;
+	int front_shield;
+	int rear_shield;
+	int left_shield;
+	int right_shield;
+	ShipMesh Ship_Mesh;
+
+Fighter and Bomber properties:
+	bool can_have_torpedos; //Allows use of Anti-Capital ship Torpedoes.
+	bool can_have_temblor_bomb; //Only true for Excalibur.
+	bool can_have_nuke; //Only true for Morningstar
+	bool can_cloak; //allows cloaking, only true for Strakha and Excalibur.
+	bool can_jump; //allows Jump Drive
+	bool can_enter_atmosphere; //Allows for Atmospheric entry/Ground Combat.
+	bool has_cockpit; //always true for player ships, set to false for enemies that don't need cockpits.
+	bool can_repair; //determines if repair robot is allowed or not.
+	int faction;
+	bool friendly_to_player;
+	int jump_fuel;
+	int fuel;
+	int hardpoints; //typically 2-8
+	int engine_speed;
+	int afterburner_speed;
+	int turn_left_right_speed;
+	int pitch_up_down_speed;
+	int roll_speed;
+	int mass;
+	int cargo_capacity;
+	int engine_health; //0-100 (0 being destroyed)
+	int hull_health; //0-100 (0 destroys ship)
+	int front_shield;
+	int rear_armor;
+	int left_armor;
+	int right_armor;
+	int front_shield;
+	int rear_shield;
+	int left_shield;
+	int right_shield;
+	ShipMesh Ship_Mesh;
+
+Factions: Terran Confederation, Kilrathi, Kilrathi Defectors, Landreich, Steltek, Firrekkans, Retros, Pirates, Merchants, Mercenaries, Mandarins, Privateers, Border Worlds, Unknown
+
+ShipMesh{
+	int class;
+	int Vertices[];
+	int Triangles[];
+	int Textures[];
+	Dock_Points[];
+	Missile_Points[];
+	Vector<Turret> Turret_Points[];
+}	
+
+Turret{
+	Mesh base_mesh;
+	vector<Mesh> gun_mesh;
+	vector<GunPoint> gun_point[3];
+}
+
+GunPoint{
+	Location[3];
+	direction[3];
+}
